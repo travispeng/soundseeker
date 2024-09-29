@@ -1,0 +1,31 @@
+.typeWriter {
+  border-right: .15em solid rgb(19, 20, 19);
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 1; /* Add this line */
+}
+
+
+.typeWriter::before {
+  content: ' ';
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(14, 15, 14) }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.custom-mt-1 {
+  margin-top: 5rem;
+}
+
+.selected-border {
+  border: 3.5px solid #38a169; /* Change this to the color you want */
+}
+
